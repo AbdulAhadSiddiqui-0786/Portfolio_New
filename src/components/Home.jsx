@@ -6,7 +6,7 @@ import ProjectSection from "./ProjectSection";
 import CertificateSection from "./CertificationSection";
 import { ColourfulText } from "./ui/colourful-text";
 import AboutMe from "./AboutMe";
-import Contact from "/Contact.jsx"; 
+import ContactUs from "./ContactUs.jsx"; 
 
 
 
@@ -56,7 +56,7 @@ const Home = () => {
       </section>
 
       <section id="Contact" className={sectionWrapperClasses}>
-        <Contact />
+        <ContactUs />
       </section>
     </div>
   );

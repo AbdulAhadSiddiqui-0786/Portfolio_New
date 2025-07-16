@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 
-const Contact = () => {
+const ContactUs= () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -393,4 +393,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactUs;
