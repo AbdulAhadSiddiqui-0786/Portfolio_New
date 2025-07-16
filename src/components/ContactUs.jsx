@@ -22,68 +22,51 @@ const ContactUs= () => {
     }
   }, []);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+ const handleSubmit = (e) => {
+   e.preventDefault();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+   if (hasSubmitted) {
+     setSubmissionStatus("already_submitted");
+     return;
+   }
 
-    // Check if already submitted
-    if (hasSubmitted) {
-      setSubmissionStatus("already_submitted");
-      return;
-    }
+   if (!formData.name || !formData.email || !formData.message) {
+     setSubmissionStatus("validation_failed");
+     return;
+   }
 
-    // Basic validation
-    if (!formData.name || !formData.email || !formData.message) {
-      setSubmissionStatus("validation_failed");
-      return;
-    }
+   emailjs
+     .send(
+       "service_wmlx0ma", // ✅ Hardcoded service ID
+       "template_cdxyb1y", // ✅ Hardcoded template ID
+       {
+         from_name: formData.name,
+         from_email: formData.email,
+         phone: formData.phone,
+         budget: formData.budget,
+         message: formData.message,
+       },
+       "BUuUoruQB3899GwbT" // ✅ Public key
+     )
+     .then((response) => {
+       console.log("SUCCESS!", response.status, response.text);
+       setSubmissionStatus("success");
+       localStorage.setItem("formSubmitted", "true");
+       setHasSubmitted(true);
+       setFormData({
+         name: "",
+         email: "",
+         phone: "",
+         budget: "",
+         message: "",
+       });
+     })
+     .catch((err) => {
+       console.error("FAILED...", err);
+       setSubmissionStatus("failed");
+     });
+ };
 
-  
-
-
-
-
-emailjs
-  .send(
-    import.meta.env.VITE_EMAILJS_SERVICE_ID,
-    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-    {
-      from_name: formData.name,
-      from_email: formData.email,
-      phone: formData.phone,
-      budget: formData.budget,
-      message: formData.message,
-    },
-    import.meta.env.VITE_EMAILJS_USER_ID // This is your Public Key, not user ID anymore
-  )
-
-  .then((response) => {
-    console.log("SUCCESS!", response.status, response.text);
-    setSubmissionStatus("success");
-    localStorage.setItem("formSubmitted", "true");
-    setHasSubmitted(true);
-
-    // Clear form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      budget: "",
-      message: "",
-    });
-  })
-  .catch((err) => {
-    console.error("FAILED...", err);
-    setSubmissionStatus("failed");
-  });
-  };
 
   return (
     <section id="Contact" className="py-16 md:py-24 lg:py-32 bg-gradient-to-br">
