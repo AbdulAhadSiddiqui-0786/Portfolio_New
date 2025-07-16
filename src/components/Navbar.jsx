@@ -27,7 +27,7 @@ const Navbar = () => {
             onClick={toggleMenu}
             className={`p-2 rounded-full transition duration-300 focus:outline-none ${
               theme === "light"
-                ? "bg-white hover:bg-pink-700 text-white"
+                ? "bg-pink-600 hover:bg-pink-700 text-white"
                 : "bg-white hover:bg-gray-300 text-black"
             }`}
           >
@@ -82,8 +82,8 @@ const Navbar = () => {
             onClick={toggleTheme}
             className={`w-10 h-10 flex items-center justify-center rounded-full shadow-md transition-all duration-300 ${
               theme === "light"
-                ? "bg-white-400 text-white hover:bg-pink-600"
-                : " text-pink-300 hover:bg-pink-600"
+                ? "bg-white text-white hover:bg-pink-600"
+                : "bg-white text-pink-300 hover:bg-pink-600"
             }`}
           >
             {theme === "light" ? "☀️" : "🌙"}
