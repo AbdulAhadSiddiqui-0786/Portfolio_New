@@ -6,7 +6,8 @@ import ProjectSection from "./ProjectSection";
 import CertificateSection from "./CertificationSection";
 import { ColourfulText } from "./ui/colourful-text";
 import AboutMe from "./AboutMe";
-import Contact from "./contact";
+import Contact from "/Contact.jsx"; 
+
 
 
 const Home = () => {

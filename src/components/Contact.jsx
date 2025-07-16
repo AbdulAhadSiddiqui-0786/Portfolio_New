@@ -45,11 +45,11 @@ const Contact = () => {
     }
 
     // EmailJS configuration (replace with your own credentials)
-const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-const userID = import.meta.env.VITE_EMAILJS_USER_ID;
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const userID = import.meta.env.VITE_EMAILJS_USER_ID;
 
-emailjs.send(serviceID, templateID, data, userID);
+    emailjs.send(serviceID, templateID, data, userID);
 
 
     // Send email
