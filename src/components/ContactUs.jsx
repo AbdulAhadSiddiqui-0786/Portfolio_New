@@ -48,6 +48,8 @@ const ContactUs= () => {
     const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const userID = import.meta.env.VITE_EMAILJS_USER_ID;
+    console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
+
 
 
 
