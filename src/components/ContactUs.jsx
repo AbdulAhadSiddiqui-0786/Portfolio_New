@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
+
 
 const ContactUs= () => {
   const [formData, setFormData] = useState({
@@ -44,48 +45,44 @@ const ContactUs= () => {
       return;
     }
 
-    // EmailJS configuration (replace with your own credentials)
-    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const userID = import.meta.env.VITE_EMAILJS_USER_ID;
-    console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
+  
 
 
 
 
-    // Send email
-    emailjs
-      .send(
-        serviceID,
-        templateID,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          phone: formData.phone,
-          budget: formData.budget,
-          message: formData.message,
-        },
-        userID
-      )
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        setSubmissionStatus("success");
-        localStorage.setItem("formSubmitted", "true");
-        setHasSubmitted(true);
+emailjs
+  .send(
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      budget: formData.budget,
+      message: formData.message,
+    },
+    import.meta.env.VITE_EMAILJS_USER_ID // This is your Public Key, not user ID anymore
+  )
 
-        // Clear form
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          budget: "",
-          message: "",
-        });
-      })
-      .catch((err) => {
-        console.error("FAILED...", err);
-        setSubmissionStatus("failed");
-      });
+  .then((response) => {
+    console.log("SUCCESS!", response.status, response.text);
+    setSubmissionStatus("success");
+    localStorage.setItem("formSubmitted", "true");
+    setHasSubmitted(true);
+
+    // Clear form
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      budget: "",
+      message: "",
+    });
+  })
+  .catch((err) => {
+    console.error("FAILED...", err);
+    setSubmissionStatus("failed");
+  });
   };
 
   return (
