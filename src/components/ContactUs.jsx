@@ -49,7 +49,6 @@ const ContactUs= () => {
     const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const userID = import.meta.env.VITE_EMAILJS_USER_ID;
 
-    emailjs.send(serviceID, templateID, data, userID);
 
 
     // Send email
