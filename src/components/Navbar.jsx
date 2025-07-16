@@ -27,7 +27,7 @@ const Navbar = () => {
             onClick={toggleMenu}
             className={`p-2 rounded-full transition duration-300 focus:outline-none ${
               theme === "light"
-                ? "bg-pink-600 hover:bg-pink-700 text-white"
+                ? "bg-white hover:bg-pink-700 text-white"
                 : "bg-white hover:bg-gray-300 text-black"
             }`}
           >
