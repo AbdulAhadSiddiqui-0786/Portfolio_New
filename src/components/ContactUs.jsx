@@ -22,50 +22,50 @@ const ContactUs= () => {
     }
   }, []);
 
- const handleSubmit = (e) => {
-   e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-   if (hasSubmitted) {
-     setSubmissionStatus("already_submitted");
-     return;
-   }
+    if (hasSubmitted) {
+      setSubmissionStatus("already_submitted");
+      return;
+    }
 
-   if (!formData.name || !formData.email || !formData.message) {
-     setSubmissionStatus("validation_failed");
-     return;
-   }
+    if (!formData.name || !formData.email || !formData.message) {
+      setSubmissionStatus("validation_failed");
+      return;
+    }
 
-   emailjs
-     .send(
-       "service_wmlx0ma", // ✅ Hardcoded service ID
-       "template_cdxyb1y", // ✅ Hardcoded template ID
-       {
-         from_name: formData.name,
-         from_email: formData.email,
-         phone: formData.phone,
-         budget: formData.budget,
-         message: formData.message,
-       },
-       "BUuUoruQB3899GwbT" // ✅ Public key
-     )
-     .then((response) => {
-       console.log("SUCCESS!", response.status, response.text);
-       setSubmissionStatus("success");
-       localStorage.setItem("formSubmitted", "true");
-       setHasSubmitted(true);
-       setFormData({
-         name: "",
-         email: "",
-         phone: "",
-         budget: "",
-         message: "",
-       });
-     })
-     .catch((err) => {
-       console.error("FAILED...", err);
-       setSubmissionStatus("failed");
-     });
- };
+    emailjs
+      .send(
+        "service_wmlx0ma", // ✅ Hardcoded service ID
+        "template_cdxyb1y", // ✅ Hardcoded template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          budget: formData.budget,
+          message: formData.message,
+        },
+        "BUuUoruQB3899GwbT" // ✅ Public key
+      )
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setSubmissionStatus("success");
+        localStorage.setItem("formSubmitted", "true");
+        setHasSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          budget: "",
+          message: "",
+        });
+      })
+      .catch((err) => {
+        console.error("FAILED...", err);
+        setSubmissionStatus("failed");
+      });
+  };
 
 
   return (
