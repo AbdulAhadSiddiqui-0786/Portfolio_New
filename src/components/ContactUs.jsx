@@ -204,7 +204,7 @@ const ContactUs= () => {
               </div>
 
               {/* Why Choose Me */}
-              <div className="card-modern bg-gradient-to-r from-pink-500 to-pink-600 p-6 sm:p-8 rounded-2xl lg:rounded-3xl dark:text-white">
+              <div className="card-modern bg-gradient-to-r from-pink-600 to-pink-800 p-6 sm:p-8 rounded-2xl lg:rounded-3xl dark:text-white">
                 <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">
                   Why Choose Me?
                 </h3>
