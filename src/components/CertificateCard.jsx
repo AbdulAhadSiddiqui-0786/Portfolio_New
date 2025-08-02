@@ -12,7 +12,7 @@ function CertificateCard({ title, imageUrl, viewLink, downloadLink }) {
       <motion.div
         whileHover={{ scale: 1 }}
         transition={{ type: "spring", stiffness: 200 }}
-        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs xl:max-w-sm mx-auto certificate-card-gradient shadow-lg rounded-2xl overflow-hidden p-4 flex flex-col justify-between cursor-pointer"
+        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs xl:max-w-sm mx-auto dark:bg-[linear-gradient(5deg,_rgb(36,0,0)_0%,_rgb(165,45,115)_35%,_rgba(106,15,102,0.395)_100%)] shadow-lg rounded-2xl overflow-hidden p-4 flex flex-col justify-between cursor-pointer"
         onClick={() => setIsModalOpen(true)}
       >
         {/* Title */}
