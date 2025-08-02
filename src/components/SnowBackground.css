@@ -18,26 +18,17 @@
     90deg,
     rgb(36, 0, 0) 0%,
     rgb(121, 9, 58) 35%,
-    rgb(255, 0, 242) 100%
+    rgb(8, 32, 190) 100%
   );
 }
 
 /* Light mode background */
 .snow-container.light {
-  background: white;
+  background: #ffffffdc;
 }
 
 /* Snowflake styling (if using manual snowflakes) */
-.snowflake {
-  position: absolute;
-  top: -10%;
-  width: 10px;
-  height: 10px;
-  background-color: #0077ff; /* Light blue snow */
-  opacity: 0.8;
-  border-radius: 50%;
-  animation: fall linear infinite;
-}
+
 /* styles.css or App.css */
 .certificate-card-gradient{
   background: linear-gradient(
@@ -57,3 +48,4 @@
       rgba(0, 212, 255, 1) 100%);
   }
 }
+
