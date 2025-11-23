@@ -73,5 +73,16 @@ const projects = [
     detailsLink:
       "https://github.com/AbdulAhadSiddiqui-0786/rugas-orm-demo/blob/main/README.md",
   },
+ {
+  id: 6,
+  title: "Treasured Fragrances",
+  description:
+    "A MERN-based product showcase website built for a paid client, featuring a modern UI with Tailwind CSS and shadcn/ui. Users can browse fragrance products and directly redirect to WhatsApp for purchase inquiries. Includes a secure admin dashboard where the admin can add, update, and delete products with real-time updates.",
+  imageUrl: "/images/Treasured_Fragrances.png",
+  tags: ["uploadthing", "React", "Tailwind CSS", "shadcn/ui", "Node.js", "Express", "MongoDB"],
+  demoLink: "https://treasuredfragrances.in/",
+  detailsLink: "https://github.com/AbdulAhadSiddiqui-0786/treasuredfragrances",
+}
+
 ];
 export default projects;
