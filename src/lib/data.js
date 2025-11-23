@@ -82,7 +82,7 @@ const projects = [
   tags: ["uploadthing", "React", "Tailwind CSS", "shadcn/ui", "Node.js", "Express", "MongoDB"],
   demoLink: "https://treasuredfragrances.in/",
   detailsLink: "https://github.com/AbdulAhadSiddiqui-0786/treasuredfragrances",
-}
+},
 
 ];
 export default projects;
