@@ -76,7 +76,7 @@ const skills = [
 
 const certifications = [
   {
-    title: "Full Stack Certificate",
+    title: "Data Science 101",
     issuer: "IBM",
     link: "https://courses.ibmcep.cognitiveclass.ai/certificates/b10624f3f6b948d18754ecf9a6dd1184#",
     date: "2023",
@@ -98,6 +98,18 @@ const certifications = [
     issuer: "IBM",
     link: "https://courses.ibmcep.cognitiveclass.ai/certificates/89e25240266c48f78cd2385c40b6db28",
     date: "2023",
+  },
+  {
+    title: "NSDC Full Stack Development",
+    issuer: "SCHOLIVERSE EDUCARE PRIVATE LIMITED",
+    link: "https://trainings.internshala.com/s/v/3636441/b5222566",
+    date: "2025",
+  },
+  {
+    title: "Artificial Intelligence - AI",
+    issuer: "United University,IBM",
+    link: "https://uniteduniversity.skillsnetwork.site/certificates/403ffded-3768-4155-99cd-9bf50bead0ba",
+    date: "2025",
   },
 ]
 
