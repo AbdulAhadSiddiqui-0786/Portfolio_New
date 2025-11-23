@@ -1,25 +1,21 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
-import SkillsSection from "./SkillsSection";
-import ProjectSection from "./ProjectSection";
+"use client"
+import { useContext } from "react"
+import { ThemeContext } from "../context/ThemeContext"
+import SkillsSection from "./SkillsSection"
+import ProjectSection from "./ProjectSection"
 
-import CertificateSection from "./CertificationSection";
-import { ColourfulText } from "./ui/colourful-text";
-import AboutMe from "./AboutMe";
-import ContactUs from "./ContactUs.jsx"; 
-
-
+import CertificateSection from "./CertificationSection"
+import { ColourfulText } from "./ui/colourful-text"
+import AboutMe from "./AboutMe"
+import ContactUs from "./ContactUs.jsx"
 
 const Home = () => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext)
 
-  const sectionWrapperClasses = "flex items-center justify-center min-h-screen mb-20 px-4 sm:px-8";
+  const sectionWrapperClasses = "flex items-center justify-center min-h-screen mb-20 px-4 sm:px-8"
 
   return (
-    <div
-      className={`${theme === "light" ? "text-black" : "text-white"}`}
-      id="home"
-    >
+    <div className={`${theme === "light" ? "text-black" : "text-white"}`} id="home">
       {/* Hero Section */}
       <div className="flex justify-center items-center flex-col mt-24 overflow-visible min-h-screen mb-20 text-center px-4">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-relaxed pb-2 text-transparent bg-gradient-to-r from-fuchsia-500 via-pink-500 to-fuchsia-500 bg-clip-text dark-glow-text">
@@ -27,12 +23,9 @@ const Home = () => {
         </h2>
 
         <p className="text-lg md:text-xl drop-shadow-md">
-          Hi, <ColourfulText text="I'm Abdul Ahad Siddiqui," /> a Passionate
-          Full Stack Web Developer
+          Hi, <ColourfulText text="I'm Abdul Ahad Siddiqui," /> a Passionate Full Stack Web Developer
         </p>
-        <p className="text-lg md:text-xl drop-shadow-md">
-          Explore my projects and skills
-        </p>
+        <p className="text-lg md:text-xl drop-shadow-md">Explore my projects and skills</p>
         <div className="flex flex-wrap items-center justify-center gap-4 text-lg md:text-xl text-pink-700 dark:text-pink-300 mt-10">
           <div className="flex items-center gap-2">
             <svg
@@ -105,7 +98,7 @@ const Home = () => {
         <ContactUs />
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

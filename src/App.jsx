@@ -1,9 +1,8 @@
-import SnowBackground from './components/SnowBackground'; // Assuming SnowBackground is in this path
-import './index.css'; // Assuming Tailwind CSS is imported here
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Footer from './components/Footer';
-
+"use client"
+import SnowBackground from "./components/SnowBackground" // Assuming SnowBackground is in this path
+import Navbar from "./components/Navbar"
+import Home from "./components/Home"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -11,9 +10,9 @@ function App() {
       <SnowBackground />
       <Navbar />
       <Home />
-      <Footer/>
+      <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
