@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 /* Cleaned up imports and added custom scrollbar styles */
 
 @custom-variant dark (&:is(.dark *));
