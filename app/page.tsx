@@ -89,7 +89,7 @@ const certifications = [
   },
 
   {
-    title: "Full Stack Development ,
+    title: "Full Stack Development" ,
     issuer: "Internshala",
     link: "https://trainings.internshala.com/s/v/3635996/b7878ef5",
     date: "2023",
