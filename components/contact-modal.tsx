@@ -151,7 +151,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
               id="budget"
               name="budget"
               type="text"
-              placeholder="e.g., $5,000 - $10,000"
+              placeholder="e.g., ₹5,000 - ₹10,000"
               value={formData.budget}
               onChange={handleChange}
               className="bg-slate-700 border-slate-600 text-slate-100 placeholder-slate-400 focus:border-teal-300 focus:ring-teal-300"

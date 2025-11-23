@@ -76,21 +76,29 @@ const skills = [
 
 const certifications = [
   {
+    title: "Artificial Intelligence - AI",
+    issuer: "United University,IBM",
+    link: "https://uniteduniversity.skillsnetwork.site/certificates/403ffded-3768-4155-99cd-9bf50bead0ba",
+    date: "2025",
+  },
+  {
+    title: "NSDC Full Stack Development",
+    issuer: "SCHOLIVERSE EDUCARE PRIVATE LIMITED",
+    link: "https://trainings.internshala.com/s/v/3636441/b5222566",
+    date: "2025",
+  },
+
+  {
+    title: "Full Stack Development ,
+    issuer: "Internshala",
+    link: "https://trainings.internshala.com/s/v/3635996/b7878ef5",
+    date: "2023",
+  },
+
+  {
     title: "Data Science 101",
     issuer: "IBM",
     link: "https://courses.ibmcep.cognitiveclass.ai/certificates/b10624f3f6b948d18754ecf9a6dd1184#",
-    date: "2023",
-  },
-  {
-    title: "Python Certificate",
-    issuer: "IBM",
-    link: "https://courses.ibmcep.cognitiveclass.ai/certificates/5537ea7b4d724fa286f81f3947e5a11b",
-    date: "2023",
-  },
-  {
-    title: "Internshala Trainings",
-    issuer: "Internshala",
-    link: "https://trainings.internshala.com/s/v/3635996/b7878ef5",
     date: "2023",
   },
   {
@@ -100,16 +108,10 @@ const certifications = [
     date: "2023",
   },
   {
-    title: "NSDC Full Stack Development",
-    issuer: "SCHOLIVERSE EDUCARE PRIVATE LIMITED",
-    link: "https://trainings.internshala.com/s/v/3636441/b5222566",
-    date: "2025",
-  },
-  {
-    title: "Artificial Intelligence - AI",
-    issuer: "United University,IBM",
-    link: "https://uniteduniversity.skillsnetwork.site/certificates/403ffded-3768-4155-99cd-9bf50bead0ba",
-    date: "2025",
+    title: "Introduction to Python",
+    issuer: "IBM",
+    link: "https://courses.ibmcep.cognitiveclass.ai/certificates/5537ea7b4d724fa286f81f3947e5a11b",
+    date: "2023",
   },
 ]
 
@@ -347,6 +349,9 @@ export default function Home() {
             <p>
               Designed and built with <span className="text-slate-200">Next.js</span> and{" "}
               <span className="text-slate-200">Tailwind CSS</span>.
+            </p>
+            <p className="text-gray-600">
+              &copy; 2025 Abdul'Portfolio  All rights reserved.
             </p>
           </footer>
         </main>
