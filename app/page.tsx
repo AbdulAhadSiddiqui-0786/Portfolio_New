@@ -48,6 +48,16 @@ const projects = [
     demoLink: "https://drive.google.com/uc?export=download&id=1F4RVgsaiE9MpSlRLyxQ1v9meY5C84LjV",
     detailsLink: "https://github.com/AbdulAhadSiddiqui-0786/Object-Detection/blob/main/README.md",
   },
+  {
+    id: 5,
+    title: "Treasured Fragrances – Product Showcase & Admin Panel",
+    description:
+      "A MERN-based product showcase website built for a paid client, featuring a modern UI with Tailwind CSS and shadcn/ui. Users can browse fragrance products and directly redirect to WhatsApp for purchase inquiries. Includes a secure admin dashboard where the client can add, update, and delete products with real-time updates.",
+    imageUrl: "/images/Treasured_Fragrances.png",
+    tags: ["MERN", "React", "Tailwind CSS", "shadcn/ui", "Node.js", "Express", "MongoDB"],
+    demoLink: "https://treasuredfragrances.in/",
+    detailsLink: "https://github.com/AbdulAhadSiddiqui-0786/treasuredfragrances"
+  }
 ]
 
 const skills = [
