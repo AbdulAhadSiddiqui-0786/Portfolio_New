@@ -44,6 +44,9 @@ importers:
       next:
         specifier: latest
         version: 16.0.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      nodemailer:
+        specifier: ^7.0.10
+        version: 7.0.10
       react:
         specifier: latest
         version: 19.2.0
@@ -828,6 +831,10 @@ packages:
   node-releases@2.0.27:
     resolution: {integrity: sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==}
 
+  nodemailer@7.0.10:
+    resolution: {integrity: sha512-Us/Se1WtT0ylXgNFfyFSx4LElllVLJXQjWi2Xz17xWw7amDKO2MLtFnVp1WACy7GkVGs+oBlRopVNUzlrGSw1w==}
+    engines: {node: '>=6.0.0'}
+
   normalize-range@0.1.2:
     resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==}
     engines: {node: '>=0.10.0'}
@@ -1531,6 +1538,8 @@ snapshots:
       - babel-plugin-macros
 
   node-releases@2.0.27: {}
+
+  nodemailer@7.0.10: {}
 
   normalize-range@0.1.2: {}
 
