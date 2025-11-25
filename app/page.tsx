@@ -102,6 +102,12 @@ const certifications = [
   },
 
   {
+    title: "Data Science Foundations",
+    issuer: "Great Learning",
+    link: "https://olympus.mygreatlearning.com/courses/13680/certificate?pb_id=581",
+    date: "2023",
+  },
+  {
     title: "Data Science 101",
     issuer: "IBM",
     link: "https://courses.ibmcep.cognitiveclass.ai/certificates/b10624f3f6b948d18754ecf9a6dd1184#",
