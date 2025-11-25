@@ -104,7 +104,7 @@ const certifications = [
   {
     title: "Data Science Foundations",
     issuer: "Great Learning",
-    link: "https://olympus.mygreatlearning.com/courses/13680/certificate?pb_id=581",
+    link: "https://www.mygreatlearning.com/certificate/MCTGOOCI?referrer_code=GLEKPNL3R6ECG",
     date: "2023",
   },
   {
