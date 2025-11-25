@@ -92,26 +92,27 @@ const certifications = [
     title: "Full Stack Development" ,
     issuer: "Internshala",
     link: "https://trainings.internshala.com/s/v/3635996/b7878ef5",
-    date: "2023",
+    date: "2025",
+  },
+  {
+    title: "Data Visualization",
+    issuer: "IBM",
+    link: "https://courses.ibmcep.cognitiveclass.ai/certificates/89e25240266c48f78cd2385c40b6db28",
+    date: "2025",
   },
 
   {
     title: "Data Science 101",
     issuer: "IBM",
     link: "https://courses.ibmcep.cognitiveclass.ai/certificates/b10624f3f6b948d18754ecf9a6dd1184#",
-    date: "2023",
+    date: "2022",
   },
-  {
-    title: "Data Visualization",
-    issuer: "IBM",
-    link: "https://courses.ibmcep.cognitiveclass.ai/certificates/89e25240266c48f78cd2385c40b6db28",
-    date: "2023",
-  },
+
   {
     title: "Introduction to Python",
     issuer: "IBM",
     link: "https://courses.ibmcep.cognitiveclass.ai/certificates/5537ea7b4d724fa286f81f3947e5a11b",
-    date: "2023",
+    date: "2022",
   },
 ]
 
