@@ -16,7 +16,7 @@ const projects = [
     imageUrl: "/images/rugas_orm.png",
     tags: ["MERN", "MongoDB", "React", "Express.js", "Tailwind CSS", "JWT"],
     demoLink: "https://rugas-orm-demo-abdul.vercel.app/",
-    detailsLink: "https://github.com/AbdulAhadSiddiqui-0786/rugas-orm-demo/blob/main/README.md",
+    detailsLink: "https://github.com/abd00786/rugas-orm-demo/blob/main/README.md",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects = [
     imageUrl: "/images/youtube-clone-banner.png",
     tags: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "MongoDB", "JWT"],
     demoLink: "https://ytcloneabd.vercel.app",
-    detailsLink: "https://github.com/AbdulAhadSiddiqui-0786/Youtube-clone/blob/main/README.md",
+    detailsLink: "https://github.com/abd00786/Youtube-clone/blob/main/README.md",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const projects = [
     imageUrl: "/images/shoppy-globe-banne.png",
     tags: ["React", "Redux", "Tailwind CSS", "REST API", "react-router-dom"],
     demoLink: "https://shoppy-globe-gray-five.vercel.app",
-    detailsLink: "https://github.com/AbdulAhadSiddiqui-0786/ShoppyGlobe/blob/main/README.md",
+    detailsLink: "https://github.com/abd00786/ShoppyGlobe/blob/main/README.md",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const projects = [
     imageUrl: "/images/Object_Detection.png",
     tags: ["Python", "Tkinter", "Open-cv", "Numpy"],
     demoLink: "https://drive.google.com/uc?export=download&id=1F4RVgsaiE9MpSlRLyxQ1v9meY5C84LjV",
-    detailsLink: "https://github.com/AbdulAhadSiddiqui-0786/Object-Detection/blob/main/README.md",
+    detailsLink: "https://github.com/abd00786/Object-Detection/blob/main/README.md",
   },
   {
     id: 5,
@@ -56,8 +56,31 @@ const projects = [
     imageUrl: "/images/Treasured_Fragrances.png",
     tags: ["MERN", "React", "Tailwind CSS", "shadcn/ui", "Node.js", "Express", "MongoDB"],
     demoLink: "https://treasuredfragrances.in/",
-    detailsLink: "https://github.com/AbdulAhadSiddiqui-0786/treasuredfragrances"
+    detailsLink: "https://github.com/abd00786/treasuredfragrances"
+  },
+  {
+    id: 6,
+    title: "Smart Helpdesk",
+    description:
+      "A fully functional MERN-based Helpdesk and Issue Management system. Features include ticket creation, assignment, status tracking, and real-time updates. Built with a modern UI using Tailwind CSS and shadcn/ui. It includes a secure admin dashboard with JWT authentication, role-based access, and complete CRUD operations for managing tickets. The system uses Express and MongoDB with proper MVC architecture, CORS handling, bcrypt for password hashing, and REST APIs for smooth communication between frontend and backend.",
+    imageUrl: "/images/smarthelpdesk.png",
+    tags: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "REST API",
+      "MVC",
+      "CORS",
+      "bcrypt",
+      "ES6"
+    ],
+    demoLink: "https://smart-helpdesk-orpin.vercel.app/",
+    detailsLink: "https://github.com/abd00786/smart-helpdesk"
   }
+
 ]
 
 const skills = [
