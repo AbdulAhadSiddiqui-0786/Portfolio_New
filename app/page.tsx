@@ -306,7 +306,7 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Certifications Section */}
+          {/* Certifications Section 2*/}
           <section
             id="certifications"
             className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
