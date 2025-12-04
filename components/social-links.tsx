@@ -6,7 +6,7 @@ export const SocialLinks = () => {
       <li className="mr-5 text-xs shrink-0">
         <a
           className="block hover:text-teal-300 text-slate-400 transition-colors"
-          href="https://github.com/AbdulAhadSiddiqui-0786"
+          href="https://github.com/abd00786"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="GitHub (opens in a new tab)"
