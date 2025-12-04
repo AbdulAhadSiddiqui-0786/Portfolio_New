@@ -18,7 +18,7 @@ export const SocialLinks = () => {
       <li className="mr-5 text-xs shrink-0">
         <a
           className="block hover:text-teal-300 text-slate-400 transition-colors"
-          href="https://www.linkedin.com/in/abdulahadsiddiqui0786/"
+          href="https://www.linkedin.com/in/abd0786/"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="LinkedIn (opens in a new tab)"
