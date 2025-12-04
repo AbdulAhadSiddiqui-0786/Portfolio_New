@@ -290,7 +290,7 @@ export default function Home() {
               <a
                 className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold group transition-colors duration-200"
                 aria-label="View Full Project Archive"
-                href="https://github.com/AbdulAhadSiddiqui-0786"
+                href="https://github.com/abd00786"
                 target="_blank"
                 rel="noreferrer"
               >
